@@ -1,0 +1,270 @@
+html,
+body {
+  background: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+section {
+    display: block;
+    height: 100vh;
+    width:100%;
+    box-sizing:border-box;
+}
+
+
+#two {
+    background: tomato;
+}
+
+#three {
+    background: dodgerblue;
+}
+
+#four {
+    background: #fafafa;
+}
+
+#five {
+  background: black;
+    background-image: url('https://omicron.aeon.co/images/507fd269-778b-422a-a586-b9dc31c6c522/header_final-essay-t00013-08.jpg');
+    background-size: contain;
+    background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+
+#six {
+    background: DARKCYAN;
+}
+
+.name { top: 10%; }
+.name h2 {
+    margin: 0;
+    text-align: center;
+    width: 100%
+  }
+
+  h2 {
+    color: #FFF;
+    font-family: 'Righteous', cursive;
+    font-size: 200px;
+  }
+
+  .name:hover {
+    text-shadow: 1px 1px #fe4902,
+                 3px 3px #eb1296,
+                 6px 6px blue,
+                 9px 9px #fe4902,
+                 12px 12px #eb1296,
+                 15px 15px blue;
+    transition: all 0.22s ease-out;
+}
+
+
+
+.shadow:hover{
+  text-shadow: 1px 1px white,
+               2px 2px white,
+               3px 3px 2px white;
+               transition: all 0.2s ease-out;
+}
+
+.shadow2:hover{
+  text-shadow: 1px 1px cyan,
+               2px 2px 2px white,
+               1px -1px cyan,
+               -1px -1px cyan,
+               -1px 1px cyan,
+               2px -2px 2px white,
+               5px 5px 10px DARKTURQUOISE;
+               transition: all 0.8s linear;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  right: 0;
+  width: 340px;
+}
+
+.links .center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+#ux {
+  position: absolute;
+  left: -35%;
+  margin-top: 50px;
+}
+
+#writing {
+  position: absolute;
+  left: 35%;
+  margin-top: 50px;
+}
+
+.container:hover .arrow {
+  border-top: 6px solid;
+  border-right: 6px solid;
+}
+.container:hover #arrow1 {
+  left: -60px;
+  border-top: 6px solid #4FE193;
+  border-right: 6px solid #4FE193;
+}
+.container:hover #arrow2 {
+  right: -20px;
+  border-top: 6px solid dodgerblue;
+  border-right: 6px solid dodgerblue;
+}
+.container:hover .overlay {
+  width: 120%;
+}
+
+.container h1 {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  color: #FFF;
+  top: 0;
+  margin: 0;
+  width: 340px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+}
+
+.arrow {
+  height: 18px;
+  width: 18px;
+  border-top: 6px solid #FFF;
+  border-right: 6px solid #FFF;
+  transform: rotate(45deg);
+  position: absolute;
+  transition: all 0.5s;
+  top: 3px;
+  bottom: 0;
+  margin: auto;
+}
+
+#arrow1{
+  left: -40px;
+  transform: rotate(225deg);
+}
+
+#arrow2{
+  right: 0px;
+  transform: rotate(45deg);
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  transition: width 0.5s;
+  overflow: hidden;
+}
+
+.overlay .text1{
+  color: #4FE193;
+}
+
+.overlay .text2{
+  color: dodgerblue;
+}
+
+.links{
+  width: 100%;
+}
+
+.white{
+  color: white;
+}
+
+.title-center{
+  text-align: center;
+  padding: 20px;
+}
+
+#page1{
+  font-weight: 100;
+  font-size: 1em;
+}
+
+
+@keyframes example {
+  0%   {color: red; text-shadow:5px 5px 3px #FF0000, -20px -20px  #0000FF;}
+  25%  {color: black; text-shadow:0 0 3px #FF0000, -10px -10px  #0000FF;}
+  50%  {color: blue; text-shadow:0 0 3px #FF0000, 0px 0px #0000FF;}
+  75%  {color: indigo; text-shadow:0 0 3px #FF0000, 10px 10px 10px #0000FF;}
+  100% {color: purple; text-shadow:0 0 3px #FF0000, 20px 20px 20px #0000FF;}
+  }
+
+.max{
+  font-family: 'bungee',  sans-serif;
+  font-size: 120px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.min{
+  padding-top: 10%;
+  font-family: 'Poiret One', sans-serif;
+  margin-top:100px;
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+.hipster{
+  font-family: 'creepster',  sans-serif;
+  font-size: 120px;
+  background: linear-gradient(330deg, #e05252 0%, rgba(127,255,0,0.5) 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.between {
+  padding-top: 10%;
+  color: #fff;
+  margin-top:100px;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+}
+
+.between1 {
+  font-weight: 700;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0.04;
+    text-shadow:3px 3px 5px gray;
+	}
+	100% {
+		opacity: 0.9;
+	}
+}
+}
